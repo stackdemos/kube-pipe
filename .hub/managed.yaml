@@ -1,0 +1,169 @@
+parameters:
+  - name: application.bucket.endpoint
+    value: 'https://s3.amazonaws.com/'
+  - name: application.bucket.name
+    value: agilestacks.demo10.superhub.io
+  - name: application.bucket.region
+    value: us-east-1
+  - name: application.cert-manager.enabled
+    value: 'true'
+  - name: application.description
+    value: Kubeflow pipeline
+  - name: application.dex.okta.appId
+    value: 0oa4lxjs1cWJUAY0t2p7
+  - name: application.dex.okta.clientId
+    value: 0oa4lxjs1cWJUAY0t2p7
+  - name: application.dex.okta.issuer
+    value: 'https://agilestacks.okta.com'
+  - name: application.docker-registry.image.name
+    value: kube-pipe
+  - name: application.docker-registry.image.repo
+  - name: application.docker-registry.image.url
+    value: //kube-pipe
+  - name: application.efk.logRetention
+    value: '7'
+  - name: application.efk.memory
+    value: '2'
+  - name: application.efk.nodes
+    value: '3'
+  - name: application.efk.storage
+    value: '100'
+  - name: application.harbor.storage
+    value: local
+  - name: application.ingress.ssoUrlPrefix
+    value: apps
+  - name: application.ingress.urlPrefix
+    value: app
+  - name: application.jenkins.instances
+    value: jenkins
+  - name: application.jenkins.namespaces
+    value: applications
+  - name: application.kubernetes-dashboard.enabled
+    value: 'true'
+  - name: application.kubernetes-dashboard.rbac.kind
+    value: admin
+  - name: application.kubernetes.bastionHost
+    value: 'false'
+  - name: application.kubernetes.etcd.count
+    value: '3'
+  - name: application.kubernetes.etcd.size
+    value: t3.micro
+  - name: application.kubernetes.etcd.spotPrice
+    value: ' '
+  - name: application.kubernetes.master.count
+    value: '3'
+  - name: application.kubernetes.master.elb
+    value: 'true'
+  - name: application.kubernetes.master.size
+    value: r4.large
+  - name: application.kubernetes.master.spotPrice
+    value: '0.8'
+  - name: application.kubernetes.multiAz
+    value: 'false'
+  - name: application.kubernetes.worker.count
+    value: '3'
+  - name: application.kubernetes.worker.natGw
+    value: 'false'
+  - name: application.kubernetes.worker.size
+    value: r4.xlarge
+  - name: application.kubernetes.worker.spotPrice
+    value: '0.8'
+  - name: application.minio.accessKey
+    value: admin
+  - name: application.minio.storageSize
+    value: 40Gi
+  - name: application.name
+    value: kube-pipe
+  - name: application.postgresql.database
+    value: postgres
+  - name: application.postgresql.storageType
+    value: ebs
+  - name: application.postgresql.user
+    value: postgres
+  - name: application.postgresql.volumeSize
+    value: 8Gi
+  - name: application.postgresql.volumeType
+    value: gp2
+  - name: cloud.availabilityZone
+    value: us-east-1a
+  - name: cloud.provider
+    value: aws
+  - name: cloud.region
+    value: us-east-1
+  - name: cloud.sshKey
+    value: agilestacks
+  - name: component.dex.okta.appId
+    value: 0oa4lxjs1cWJUAY0t2p7
+  - name: component.dex.okta.clientId
+    value: 0oa4lxjs1cWJUAY0t2p7
+  - name: component.dex.okta.issuer
+    value: 'https://agilestacks.okta.com'
+  - name: component.github.repository.name
+    value: kube-pipe
+  - name: component.github.repository.organization
+    value: stackdemos
+  - name: dns.baseDomain
+    value: demo10.superhub.io
+  - name: dns.name
+    value: main-cicd
+  - name: terraform.bucket.name
+    value: agilestacks.demo10.superhub.io
+  - name: terraform.bucket.region
+    value: us-east-1
+outputs:
+  - name: application.bucket.endpoint
+  - name: application.bucket.name
+  - name: application.bucket.region
+  - name: application.cert-manager.enabled
+  - name: application.description
+  - name: application.dex.okta.appId
+  - name: application.dex.okta.clientId
+  - name: application.dex.okta.issuer
+  - name: application.docker-registry.image.name
+  - name: application.docker-registry.image.repo
+  - name: application.docker-registry.image.url
+  - name: application.efk.logRetention
+  - name: application.efk.memory
+  - name: application.efk.nodes
+  - name: application.efk.storage
+  - name: application.harbor.storage
+  - name: application.ingress.ssoUrlPrefix
+  - name: application.ingress.urlPrefix
+  - name: application.jenkins.instances
+  - name: application.jenkins.namespaces
+  - name: application.kubernetes-dashboard.enabled
+  - name: application.kubernetes-dashboard.rbac.kind
+  - name: application.kubernetes.bastionHost
+  - name: application.kubernetes.etcd.count
+  - name: application.kubernetes.etcd.size
+  - name: application.kubernetes.etcd.spotPrice
+  - name: application.kubernetes.master.count
+  - name: application.kubernetes.master.elb
+  - name: application.kubernetes.master.size
+  - name: application.kubernetes.master.spotPrice
+  - name: application.kubernetes.multiAz
+  - name: application.kubernetes.worker.count
+  - name: application.kubernetes.worker.natGw
+  - name: application.kubernetes.worker.size
+  - name: application.kubernetes.worker.spotPrice
+  - name: application.minio.accessKey
+  - name: application.minio.storageSize
+  - name: application.name
+  - name: application.postgresql.database
+  - name: application.postgresql.storageType
+  - name: application.postgresql.user
+  - name: application.postgresql.volumeSize
+  - name: application.postgresql.volumeType
+  - name: cloud.availabilityZone
+  - name: cloud.provider
+  - name: cloud.region
+  - name: cloud.sshKey
+  - name: component.dex.okta.appId
+  - name: component.dex.okta.clientId
+  - name: component.dex.okta.issuer
+  - name: component.github.repository.name
+  - name: component.github.repository.organization
+  - name: dns.baseDomain
+  - name: dns.name
+  - name: terraform.bucket.name
+  - name: terraform.bucket.region
